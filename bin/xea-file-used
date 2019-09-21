@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+/**
+ * Copyright (c) Yejiang1015, Inc. and its affiliates. All Rights Reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+const fs = require("fs");
+const path = require("path");
+
+const rootPath = process.env.PWD;
+const configPath = path.join(rootPath, "xea.config.js");
+
+const resolve = dir => {
+    return path.join(rootPath, dir);
+};
+let config = {};
+if (fs.existsSync(configPath)) {
+    config = require(configPath);
+}
+const defaultConf = {
+    targetPath: resolve("src"),
+    outputPath: 'xea-file-used.txt',
+    testRegExp: [".png", ".jpg", ".gif"],
+    testPrefix: "src/asset",
+    exclude: ["node_modules", ".DS_Store", "dist", ".git"]
+};
+const options = Object.assign(defaultConf, config);
+require("../index")(options);

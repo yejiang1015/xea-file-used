@@ -1,0 +1,12 @@
+{
+    "name": "xea-file-used",
+    "version": "1.0.0",
+    "main": "index.js",
+    "bin": {
+        "xea-file-used": "./bin/xea-file-used"
+    },
+    "scripts": {
+        "start": "node ./bin/xea-file-used"
+    },
+    "license": "MIT"
+}
