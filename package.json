@@ -1,7 +1,27 @@
 {
     "name": "xea-file-used",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "index.js",
+    "description": "node工具包，检测项目没有使用到的图片",
+    "homepage": "https://github.com/yejiang1015/xea-file-used#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yejiang1015/xea-file-used.git"
+    },
+    "directories": {
+        "lib": "lib",
+        "test": "test"
+    },
+    "keywords": [
+        "node",
+        "检测项目没有使用到的图片",
+        "node工具"
+    ],
+    "author": "yejiang1015",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yejiang1015/xea-file-used/issues"
+    },
     "bin": {
         "xea-file-used": "./bin/xea-file-used"
     },
