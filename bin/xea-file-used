@@ -21,7 +21,7 @@ if (fs.existsSync(configPath)) {
 }
 const defaultConf = {
     targetPath: resolve("src"),
-    outputPath: 'xea-file-used.txt',
+    outputPath: '',
     testRegExp: [".png", ".jpg", ".gif"],
     testPrefix: "src/asset",
     exclude: ["node_modules", ".DS_Store", "dist", ".git"]

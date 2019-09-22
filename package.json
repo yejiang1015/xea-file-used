@@ -1,6 +1,6 @@
 {
     "name": "xea-file-used",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "index.js",
     "description": "node工具包，检测项目没有使用到的图片",
     "homepage": "https://github.com/yejiang1015/xea-file-used#readme",
